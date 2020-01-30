@@ -13,27 +13,27 @@
             <div class="form-group">
               <label for="inputName" class="col-lg-4 control-label">Name</label>
               <div class="col-lg-8">
-                <input type="text" class="form-control" id="inputName" formControlName = "fullname" name="fullName" placeholder="Your full name" ngModel>
+                <input type="text" class="form-control" id="inputName" formControlName = "fullname" placeholder="Your full name" >
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail" class="col-lg-4 control-label">Email</label>
               <div class="col-lg-8">
-                <input type="text" class="form-control" id="inputEmail" formControlName = "emailid" name="email" placeholder="Email" ngModel>
+                <input type="text" class="form-control" id="inputEmail" formControlName = "emailid"  placeholder="Email" >
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputNumber" class="col-lg-4 control-label">Contact Number</label>
               <div class="col-lg-8">
-                <input type="text" class="form-control" id="inputNumber" formControlName = "number" name="mobileNumber" placeholder="+91-" ngModel>
+                <input type="text" class="form-control" id="inputNumber" formControlName = "number" placeholder="+91-" >
               </div>
             </div>
 
             <div class="form-group">
               <label for="inputPassword" class="col-lg-4 control-label">Password</label>
               <div class="col-lg-8">
-                <input type="password" class="form-control" id="inputPassword" formControlName = "passwd"  name="password" placeholder="Password" ngModel>
+                <input type="password" class="form-control" id="inputPassword" formControlName = "passwd"  placeholder="Password" >
                 <div class="checkbox">
                   <label>
                     <input type="checkbox" id="showPassword"> Visible
@@ -45,9 +45,9 @@
             <div class="form-group">
               <label for="textArea" class="col-lg-4 control-label">Designation</label>
               <div class="col-lg-8">
-                <select class="form-control" id="sRoles" formControlName = "roles"  name="Roles" ngModel>
+                <select class="form-control" id="sRoles" formControlName = "roles" >
                   <option>--Select your role--</option>
-                  <option *ngFor="let role of roles" [value]="role">{{role}}</option>
+                  <option *ngFor="let role of roles" [ngValue]="role">{{role}}</option>
                 </select>
               </div>
             </div>
@@ -61,7 +61,7 @@
           </div>
           <div class="col-lg-4">
             <img src="assets/images/user.png" id="userImage" alt="user_image.png" style="width:150px;height:150px;">
-            <input type="file" class="form-control" id="inputfile" formControlName = "path" name="path" ngModel>
+            <input type="file" class="form-control" id="inputfile" formControlName = "path" name="path" >
           </div>
           </fieldset>
         </form>

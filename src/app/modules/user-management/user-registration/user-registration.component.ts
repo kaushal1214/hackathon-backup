@@ -28,12 +28,12 @@ export class UserRegistrationComponent implements OnInit {
   ngOnInit() {
     this.roles = ['Developer', 'Data Scientist'];
     this.userForm = new FormGroup({
-                emailid: new FormControl("abc@xyz.com"),
-                fullname: new FormControl("Kaushal Kishor"),
-                passwd: new FormControl("1234567"),
-                number: new FormControl("98765432"),
-                roles: new FormControl("abc@xyz.com"),
-                path: new FormControl("C:/fakepath")
+                emailid: new FormControl(''),
+                fullname: new FormControl(''),
+                passwd: new FormControl(''),
+                number: new FormControl(''),
+                roles: new FormControl(''),
+                path: new FormControl('')
 
     });
     }
